@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Muhammad Herlangga Kurniawan</title>
+    
+    <!-- Memanggil Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Konfigurasi Warna Khusus (Marun dan Biru Laut) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: '#520C12',
+                        ocean: '#006994'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Bagian Header (Foto, Nama, dan Selamat Datang) -->
+    <header class="bg-maroon text-white text-center py-16 px-4 border-b-8 border-ocean shadow-md">
+        <!-- Foto Profil Anda -->
+        <img src="herlangga.jpeg" alt="Foto Muhammad Herlangga Kurniawan" class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full mx-auto mb-6 border-4 border-ocean shadow-lg">
+        
+        <h1 class="text-4xl md:text-5xl font-bold mb-3 tracking-wide">Muhammad Herlangga Kurniawan</h1>
+        <p class="text-xl text-gray-200 font-light">Selamat datang di blog saya.</p>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-4xl mx-auto p-6 my-10 bg-white shadow-xl rounded-2xl border-t-4 border-ocean">
+        
+        <div class="text-center mb-10">
+            <i class="fa-solid fa-water text-ocean text-5xl mb-4"></i>
+            <h2 class="text-3xl font-bold text-maroon">Fakta Menarik Mamalia Laut</h2>
+            <p class="text-gray-500 mt-2">Menjelajahi keunikan penghuni samudra.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Artikel 1: Lumba-lumba -->
+            <article class="p-6 border-2 border-ocean rounded-xl bg-blue-50 relative overflow-hidden">
+                <div class="flex items-center mb-4 text-maroon">
+                    <i class="fa-solid fa-fish-fins text-2xl mr-3 text-ocean"></i>
+                    <h3 class="text-2xl font-semibold">Lumba-lumba</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Lumba-lumba adalah mamalia laut yang sangat cerdas. Mereka menggunakan ekolokasi untuk menemukan mangsa dan berkomunikasi dengan kawanannya menggunakan berbagai suara siulan. Uniknya, lumba-lumba tidur dengan mematikan hanya setengah bagian otaknya dan satu mata terbuka untuk tetap waspada terhadap pemangsa.
+                </p>
+                <!-- HYPERLINK 1 -->
+                <a href="#baca-lumba-lumba" class="inline-block font-bold text-ocean hover:text-maroon transition duration-300">
+                    Baca selengkapnya <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </article>
+
+            <!-- Artikel 2: Paus Orca -->
+            <article class="p-6 border-2 border-ocean rounded-xl bg-blue-50 relative overflow-hidden">
+                <div class="flex items-center mb-4 text-maroon">
+                    <i class="fa-solid fa-water text-2xl mr-3 text-ocean"></i>
+                    <h3 class="text-2xl font-semibold">Paus Orca</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Paus Orca, yang sering dijuluki paus pembunuh, sebenarnya merupakan spesies terbesar dari keluarga lumba-lumba. Mereka adalah predator puncak yang hidup dalam kelompok keluarga matrilinial. Orca sangat cerdas secara sosial, dan setiap kelompok memiliki "dialek" komunikasi mereka sendiri yang berbeda dari kelompok lain.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer class="bg-maroon text-white text-center py-10 border-t-8 border-ocean mt-16">
+        <h4 class="text-2xl font-bold mb-6">Mari Berjejaring!</h4>
+        
+        <!-- HYPERLINK 2 -->
+        <a href="mailto:herlangga@example.com" class="inline-block bg-ocean text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white hover:text-maroon transition duration-300 shadow-lg">
+            <i class="fa-solid fa-envelope mr-2"></i> Hubungi Saya
+        </a>
+        
+        <p class="mt-8 text-sm text-gray-300 opacity-80">&copy; 2026 Muhammad Herlangga Kurniawan.</p>
+    </footer>
+
+</body>
+</html>
